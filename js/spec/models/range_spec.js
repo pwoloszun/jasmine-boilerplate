@@ -11,19 +11,19 @@ describe("RocketMind.Range", function() {
 
     describe("given value is in range", function() {
       it("should be true", function() {
-        expect(range.include(5)).toBe(true);
+        range.include(5).should.be.true;
       });
     });
 
     describe("given value is out of range", function() {
       it("should be false", function() {
-        expect(range.include(-99)).toBe(false);
+        range.include(-99).should.be.false;
       });
     });
 
     describe("given value equal to range max", function() {
       it("should be false", function() {
-        expect(range.include(rangeMin)).toBe(false);
+        range.include(rangeMin).should.be.false;
       });
     });
   });

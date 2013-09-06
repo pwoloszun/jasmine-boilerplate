@@ -22,4 +22,8 @@
   function execJasmine() {
     jasmineEnv.execute();
   }
+
+  // init chai.js BDD should assertions
+  window.expect = chai.expect;
+  chai.should();
 })();

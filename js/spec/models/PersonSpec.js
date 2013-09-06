@@ -6,7 +6,7 @@ describe("Person", function() {
       it("should return name", function() {
         var name = "Bob";
         var person = new Person(name);
-        expect(person.getName()).toEqual(name);
+        person.getName().should.equal(name);
       });
 
     });
@@ -15,7 +15,7 @@ describe("Person", function() {
 
       it("should return undefined", function() {
         var person = new Person();
-        expect(person.getName()).toBeUndefined();
+        expect(person.getName()).to.be.undefined;
       });
 
     });
