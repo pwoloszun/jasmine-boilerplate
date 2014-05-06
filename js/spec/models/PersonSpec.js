@@ -1,28 +1,25 @@
+// describe(descriptionStr, groupingFn);
+// it(descriptionStr, testFn);
+
 describe("Person", function() {
 
-  describe("#getName", function() {
-    describe("name is defined", function() {
+  describe("getname()", function() {
 
-      it("should return name", function() {
+    describe("case when name is undefined", function() {
+      it("should be undefined", function() {
+        var bob = new Person();
+        expect(bob.getName()).to.be.undefined;
+      });
+    });
+
+    describe("case when name is undefined", function() {
+      it("should return name if name was defined", function() {
         var name = "Bob";
-        var person = new Person(name);
-        person.getName().should.equal(name);
+        var bob = new Person(name);
+        bob.getName().should.equal(name);
       });
-
     });
 
-    describe("name is undefined", function() {
-
-      it("should return undefined", function() {
-        var person = new Person();
-        expect(person.getName()).to.be.undefined;
-      });
-
-    });
-  });
-
-  describe("#eat(food)", function() {
-    // TODO pending("not implemented");
   });
 
 });
