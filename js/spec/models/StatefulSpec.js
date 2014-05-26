@@ -4,6 +4,7 @@
 //  evented.on("click", listener);
 //  evented.trigger("click", args);
 //
+//  listener.called.should.be.true;
 //  listener.calledOn(evented).should.be.true;
 //  listener.calledWith(args[0], args[1]).should.be.true;
 //});
