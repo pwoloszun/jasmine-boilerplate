@@ -1,0 +1,3 @@
+var Bottega = {
+  Models: {}
+};
