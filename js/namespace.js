@@ -1,3 +1,3 @@
-var Bottega = {
+window.Bottega = {
   Models: {}
 };
