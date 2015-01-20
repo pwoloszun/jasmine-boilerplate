@@ -1,4 +1,4 @@
-xdescribe("Evented", function() {
+describe("Evented", function() {
   var object, listener, eventName;
 
   beforeEach(function() {
@@ -27,8 +27,8 @@ xdescribe("Evented", function() {
 
   it("should call every listener function", function() {
     var listener2 = sinon.spy();
-    obj.on(eventName, listener2);
-    obj.trigger("click");
+    object.on(eventName, listener2);
+    object.trigger("click");
 
     listener.called.should.be.true;
     listener2.called.should.be.true;
