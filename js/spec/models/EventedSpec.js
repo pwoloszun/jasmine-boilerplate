@@ -1,4 +1,4 @@
-describe("Evented", function() {
+xdescribe("Evented", function() {
   var object, listener, eventName;
 
   beforeEach(function() {
