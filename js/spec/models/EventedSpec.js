@@ -28,7 +28,7 @@ xdescribe("Evented", function() {
   it("should call every listener function", function() {
     var listener2 = sinon.spy();
     object.on(eventName, listener2);
-    object.trigger("click");
+    object.trigger(eventName);
 
     listener.called.should.be.true;
     listener2.called.should.be.true;
@@ -39,6 +39,7 @@ xdescribe("Evented", function() {
     mixin(obj2, Evented);
 
     object.trigger(eventName);
+    obj2.trigger(eventName);
 
     listener.calledOnce.should.be.true;
     listener.calledOn(obj2).should.be.false;
