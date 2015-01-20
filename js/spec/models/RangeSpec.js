@@ -1,1 +1,1 @@
-// TODO: spec Bottega.Models.Range
+// TODO: specs for class Bottega.Models.Range
